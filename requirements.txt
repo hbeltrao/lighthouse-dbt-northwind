@@ -1,0 +1,4 @@
+
+dbt-postgres==1.2.1
+sqlfluff==0.13.1
+sqlfluff-templater-dbt==0.12.0
