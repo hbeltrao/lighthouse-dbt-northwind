@@ -1,9 +1,8 @@
 
 with staging as (
 
-    select * from {{ ref('stg_my_source__my_table') }}
+    select * from {{ ref('stg_northwind__orders') }}
 
 )
-
 
 select * from staging

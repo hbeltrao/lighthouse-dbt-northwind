@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_northwind
+    database: indicium-lighthouse
+    schema: raw_northwind
+    tables:
+      - name: raw__orders
+        description: Table containing all orders from all customers
+        
