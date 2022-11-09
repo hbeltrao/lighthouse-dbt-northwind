@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: raw__categories
-    database: raw_northwind
+  - name: raw_northwind
+    database: indicium-lighthouse
     schema: raw_northwind
     tables:
       - name: raw__categories

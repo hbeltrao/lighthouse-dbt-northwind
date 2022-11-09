@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: raw__suppliers
+  - name: raw_northwind
     database: indicium-lighthouse
     schema: raw_northwind
     tables:
