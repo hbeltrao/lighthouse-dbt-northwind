@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: raw__suppliers
+    database: indicium-lighthouse
+    schema: raw_northwind
+    tables:
+    
+      - name: raw__suppliers
+        description: list of all items in each order.
+        columns:
+          - name: supplier_id
+            description: Primary key of suppliers table
+
+          
+          - name: company_name
+            description: name of the supplier
+          
+          - name: country
+            description: supplier country
+
+          - name: city
+            description: Supplier city
+          
+          - name: region
+            description: supplier region
+
+          - name: fax
+          - name: phone
+          - name: address
+          - name: homepage
+          - name: postal_code
+          - name: contact_name
+          - name: contact_title

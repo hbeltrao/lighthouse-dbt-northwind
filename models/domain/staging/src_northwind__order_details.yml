@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: raw__order_details
+    database: indicium-lighthouse
+    schema: raw_northwind
+    tables:
+      
+      - name: raw__order_details
+        description: list of all items in each order.
+        columns:
+          - name: order_id
+            description: foreign key connected to the orders table.
+          
+          - name: product_id
+            description: foreign key connected to the products table.
+          
+          - name: unit_price
+            description: price for each unit of the product
+          
+          - name: quantity
+            description: aamount of items of this same product
+
+          - name: discount
+            description: percentual value to be deducted of the resulting multiplication unit_price*quantity

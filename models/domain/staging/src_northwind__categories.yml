@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: raw__categories
+    database: raw_northwind
+    schema: raw_northwind
+    tables:
+      - name: raw__categories
+        description: list of all categories of items.
+        columns:
+          - name: category_id
+            description: primary key of categories table
+            tests:
+              - unique
+              - not_null
+          
+          - name: category_name
+            description: name of each category
+          
+          - name: description
+          - name: picture

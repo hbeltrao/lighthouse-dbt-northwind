@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: raw__products
+    database: indicium-lighthouse
+    schema: raw_northwind
+    tables:
+
+      - name: raw__products
+        description: Information about each unique product in the northwind portfolio.
+        columns:
+          - name: product_id
+            description: "primary key"
+
+          - name: unit_price
+            description: "monetary value for each unit of the item"
+          
+          - name: category_id
+            description: "foreign key connected to the categories table"
+          
+          - name: supplier_id
+            description: "foreign key connected to the suppliers table"
+
+          - name: discontinued
+            description: "flag to identify if the item is discontinued or not"

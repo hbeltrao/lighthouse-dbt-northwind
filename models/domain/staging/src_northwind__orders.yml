@@ -1,0 +1,39 @@
+version: 2
+
+sources:
+  - name: raw__orders
+    database: indicium-lighthouse
+    schema: raw_northwind
+    tables:
+      - name: raw__orders
+        description: backlog of all orders.
+        columns:
+          - name: order_id
+            description: primary key of the orders table.
+            tests:
+              - unique
+              - not_null
+          
+          - name: order_date
+            description: Date that the order was placed.
+            tests:
+              - not_null
+          
+          - name: customer_id
+            description: Identification of the customer who placed the order.
+            tests:
+              - not_null
+          
+          - name: employee_id
+            description: "Identification of the employee who processed the order the responsible in the northwind side."
+                   
+          - name: required_date
+          - name: ship_via
+          - name: ship_city
+          - name: ship_name
+          - name: ship_region
+          - name: ship_address
+          - name: ship_country
+          - name: shipped_date
+          - name: ship_postal_code
+          - name: freight

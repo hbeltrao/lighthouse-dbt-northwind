@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: raw__customers
+    database: indicium-lighthouse
+    schema: raw_northwind
+    tables:
+    
+      - name: raw__customers
+        description: list of all items in each order.
+        columns:
+          - name: customer_id
+            description: primary key of customers table
+            tests:
+               - unique
+               - not_null
+
+          - name: company_name
+            description: name of the customer
+          
+          - name: country
+          - name: city
+          - name: region
+          - name: postal_code
+          - name: address
+          - name: phone
+          - name: fax
+          - name: contact_name
+          - name: contact_title
